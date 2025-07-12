@@ -1,0 +1,66 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block content1 %}
+
+<div class="row my-5">
+    <div class="col-4 d-flex justify-content-center align-items-center">
+        <img src="{% static 'images/mine3.jpeg'%}" alt="my_image" width="200">
+    </div>
+    <div class="col-7 text-left text-light">
+        <h4>Helloo..!</h4>
+        <p class="fs-5 text-justify">
+            This is Sowgandhika Pithani. Recently I have completed my BTech in Computer Science at Rajiv Gandhi
+            University Of Knowledge Technologies-Ongole. I am well-versed in various programming languages like Python,
+            C language.
+            I have hands-on experience creating responsive web pages using HTML, CSS, Bootstrap, and JavaScript. I am
+            also proficient in creating and managing databases and writing queries efficiently.
+        </p>
+    </div>
+</div>
+<!-- 
+<div class="row d-flex justify-content-center my-2">
+    <h2 class="text-center" style="color:#4fffb0">My Tech Stack</h2>
+    <div class="d-flex justify-content-around align-items-center">
+        <img src="{% static 'images/html.png' %}" alt="html_image" width="70" height="70" class="img-fluid">
+        <img src="{% static 'images/css.png' %}" alt="html_image" width="70" height="70" class="img-fluid">
+        <img src="{% static 'images/bootstrap.png' %}" alt="html_image" width="70" height="70" class="img-fluid">
+        <img src="{% static 'images/js.png' %}" alt="html_image" width="70" height="70" class="img-fluid">
+        <img src="{% static 'images/python.jpg' %}" alt="html_image" width="70" height="70" class="img-fluid">
+        <img src="{% static 'images/download.png' %}" alt="html_image" width="70" height="70" class="img-fluid">
+    </div>
+</div> -->
+<div class="row d-flex justify-content-center my-2">
+    <h2 class="text-center" style="color:#4fffb0">My Tech Stack</h2>
+    <div class="d-flex justify-content-around align-items-center flex-wrap">
+        <!-- Tech Item Start -->
+        <div class="text-center mx-3">
+            <img src="{% static 'images/html.png' %}" alt="html" width="70" height="70" class="img-fluid">
+            <p class="label mt-2" style="color: #4fffb0; font-weight: 600;">HTML</p>
+        </div>
+        <div class="text-center mx-3">
+            <img src="{% static 'images/css.png' %}" alt="css" width="70" height="70" class="img-fluid">
+            <p class="label mt-2"  style="color: #4fffb0; font-weight: 600;">CSS</p>
+        </div>
+        <div class="text-center mx-3">
+            <img src="{% static 'images/bootstrap.png' %}" alt="bootstrap" width="70" height="70" class="img-fluid">
+            <p class="label mt-2"  style="color: #4fffb0; font-weight: 600;">Bootstrap</p>
+        </div>
+        <div class="text-center mx-3">
+            <img src="{% static 'images/js.png' %}" alt="js" width="70" height="70" class="img-fluid">
+            <p class="label mt-2"  style="color: #4fffb0; font-weight: 600;" >JavaScript</p>
+        </div>
+        <div class="text-center mx-3">
+            <img src="{% static 'images/python.jpg' %}" alt="python" width="70" height="70" class="img-fluid">
+            <p class="label mt-2"  style="color: #4fffb0; font-weight: 600;" >Python</p>
+        </div>
+        <div class="text-center mx-3">
+            <img src="{% static 'images/download.png' %}" alt="download" width="70" height="70" class="img-fluid">
+            <p class="label mt-2"  style="color: #4fffb0; font-weight: 600;" >Django</p>
+        </div>
+        <!-- Tech Item End -->
+    </div>
+</div>
+
+
+{% endblock content1 %}
